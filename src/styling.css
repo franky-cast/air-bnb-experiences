@@ -1,0 +1,108 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Poppins;
+}
+
+.gray {
+    color: #918E9B;
+}
+
+/* navbar */
+.navbar{
+    margin: 0 auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.logo{
+    margin: 1.75em;
+    width: 20%;
+    max-width: 120px;
+}
+
+/* hero */
+.hero-container{
+    padding: 1.75em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery{
+    width: 85%;
+    min-width: 350px;
+    max-width: 800px;
+    padding-right: 1.75em;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.title{
+    margin-top: 2.5rem;
+    font-size: 1.75rem;
+    margin-bottom: 0;
+}
+
+.paragraph{
+    width: 60%;
+    max-width: 400px;
+    /* border: 1px solid green; */
+}
+
+/* card */
+.card--a-tag {
+    text-decoration: none;
+    color: black;
+    width: 150px;
+}
+
+.card {
+    margin-left: 1.75em;
+    margin-bottom: 3em;
+    width: 150px;
+}
+
+.card:hover{
+    opacity: .9;
+}
+
+.card--image{
+    border-radius: 20px;
+    width: 100%;
+}
+
+.card--info {
+    display: flex;
+    gap: 0.25em;
+    margin-bottom: 0;
+    padding-top: 0;    
+}
+
+.star-png{
+    width: 20px;
+    align-self: center;
+    height: 20px;
+}
+
+.card--title{
+    margin-top: 0;
+}
+
+.card-flex{
+    display: flex;
+    gap: 15em;
+}
+
+
+@media (min-width: 900px) {
+    .title{
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+    .card {
+        width: 300px;
+    }
+}

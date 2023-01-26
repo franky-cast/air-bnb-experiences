@@ -6,12 +6,14 @@ import experiencesData from "../data"
 
 function App() {
   const data = experiencesData.map(x => <Card 
+    key={x.id}
     cardImage={x.coverImg}
     rating={x.stats.rating}
     reviews={x.stats.reviewCount}
     country={x.location}
     cardTitle ={x.title}
     price={x.price}
+    spots={x.openSpots}
   />)
 
   return (

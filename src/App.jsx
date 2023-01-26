@@ -2,24 +2,25 @@ import Nav from "./components/Nav"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
 
-import katie from "./assets/katie-zaferes.png"
+import experiencesData from "../data"
 
 function App() {
+  const data = experiencesData.map(x => <Card 
+    cardImage={x.coverImg}
+    rating={x.stats.rating}
+    reviews={x.stats.reviewCount}
+    country={x.location}
+    cardTitle ={x.title}
+    price={x.price}
+  />)
+
   return (
     <div className="App">
       <Nav />
       <Hero />
       <div className="card-flex">
-        <Card
-          cardImage={katie}
-          rating="5.0"
-          reviews={6}
-          country="USA"
-          cardTitle ="Life lessons with Katie Zaferes"
-          price={136}
-        />
+        {data}
       </div>
-      
     </div>
   )
 }

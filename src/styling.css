@@ -96,6 +96,10 @@ body{
     gap: 15em;
 }
 
+.border {
+    border: 1px solid red;
+}
+
 
 @media (min-width: 900px) {
     .title{

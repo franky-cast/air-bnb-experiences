@@ -4,8 +4,8 @@ function Card(props) {
     const {cardImage, rating, reviews, country, cardTitle, price} = props
     return (
         <a className="card--a-tag" href="#">
-            <div className="card">
-                <img src={cardImage} alt="Katie Zaferes" className="card--image"></img>
+            <div className="card border">
+                <img src={`.../public/images/${cardImage}`} alt={cardTitle} className="card--image"></img>
                 <div className="card--info">
                     <img src={star} alt="Star icon" className="star-png"></img>
                     <p className="card--rating">{rating}</p>
